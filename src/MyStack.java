@@ -41,6 +41,31 @@ public class MyStack {
             return null;
         }
 
+        StudentInfo removedTopStudent = top;
+
+        if (numInStack == 1) {
+            removedTopStudent.next = top;
+            top.next = null;
+            removedTopStudent.next = removedTopStudent;
+            numInStack--;
+            return removedTopStudent.next;
+        }
+
+        StudentInfo previousTopStudent;
+        previousTopStudent = top.next;
+        removedTopStudent.next = top;
+        top.next = null;
+        top = previousTopStudent;
+        numInStack--;
+        return removedTopStudent;
+    }
+
+    public StudentInfo peek() {
         
+        if (numInStack == 0) {
+            return null;
+        }
+
+        return top;
     }
 }
