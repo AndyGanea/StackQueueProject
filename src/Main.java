@@ -35,6 +35,13 @@ public class Main {
 		
 		System.out.println("\nAbout to display the Stack!");
 		theS.displayStack();
+
+		someStudent = new StudentInfo(222222, "Elmer", "Fudd");
+		theS.push(someStudent);
+		theS.displayStack();
+
+		theS.pop();
+		theS.displayStack();
 		
 		
 		

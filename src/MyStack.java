@@ -27,8 +27,8 @@ public class MyStack {
         }
 
         StudentInfo currentStudent;
-        currentStudent = top;
-        while (currentStudent != null) {
+        currentStudent = top; // To display the stack, we have to crawl down it from top the bottom, as specified.
+        while (currentStudent != null) { // If currentStudent is null, we have reached the end of the stack.
             System.out.println(currentStudent.firstName);
             System.out.println(currentStudent.studentNum);
             currentStudent = currentStudent.next;
@@ -58,7 +58,7 @@ public class MyStack {
         top = previousTopStudent;
         numInStack--;
         return removedTopStudent;
-    }
+    } // END OF POP
 
     public StudentInfo peek() {
         
@@ -67,5 +67,5 @@ public class MyStack {
         }
 
         return top;
-    }
+    } // END OF PEAK
 }
