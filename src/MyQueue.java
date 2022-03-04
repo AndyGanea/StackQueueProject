@@ -27,7 +27,7 @@ public class MyQueue {
                 numInQueue++;
                 return;
             }
-            else {
+            else { // If the last student hasn't been reached, currentStudent has to move to the next student in line.
                 currentStudent = currentStudent.next;
             }
         }

@@ -40,6 +40,12 @@ public class Main {
 		theS.push(someStudent);
 		theS.displayStack();
 
+		someStudent = new StudentInfo(333333, "Foghorn", "Leghorn");
+		theS.push(someStudent);
+		theS.displayStack();
+
+		theS.pop();
+		theS.displayStack();
 		theS.pop();
 		theS.displayStack();
 		
@@ -54,6 +60,9 @@ public class Main {
 		
 		
 		someStudent = new StudentInfo(111111, "Daffy", "Duck");
+		theQ.enqueue(someStudent);
+
+		someStudent = new StudentInfo(222222, "Elmer", "Fudd");
 		theQ.enqueue(someStudent);
 		
 		System.out.println("\nAbout to display the queue (front to rear)!");
