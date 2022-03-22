@@ -81,6 +81,9 @@ public class Main {
 		}
 		System.out.println("\nAbout to display the queue (front to rear)!");
 		theQ.displayQueue();
+
+		removedStudent = theQ.dequeue();
+		theQ.displayQueue();
 		
 		
 
