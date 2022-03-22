@@ -24,6 +24,7 @@ public class MyStack {
         
         if (numInStack == 0) { // This if statement is is the user tries to display an empty list.
             System.out.println("The stack is currently empty!");
+            return;
         }
 
         StudentInfo currentStudent;

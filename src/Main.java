@@ -48,6 +48,8 @@ public class Main {
 		theS.displayStack();
 		theS.pop();
 		theS.displayStack();
+		theS.pop();
+		theS.displayStack();
 		
 		
 		
