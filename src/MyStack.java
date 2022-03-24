@@ -13,11 +13,19 @@ public class MyStack {
     // Methods
 
     public void push(StudentInfo newTopStudent) {
+        if (numInStack == 0) {
+            top = newTopStudent;
+            top.next = null;
+            numInStack++;
+            return;
+        }  
+        
         StudentInfo oldTopStudent;
         oldTopStudent = top; // The current student at the top is the old student, which we are now adding a new student on top of.
         top = newTopStudent; // Our new top is the student that we passed in.
         top.next = oldTopStudent; // Our new top has to point to the element directly below it in the stack.
         numInStack++;
+        return;
     } // END OF PUSH
 
     public void displayStack() {

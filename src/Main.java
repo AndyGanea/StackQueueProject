@@ -50,6 +50,14 @@ public class Main {
 		theS.displayStack();
 		theS.pop();
 		theS.displayStack();
+
+		someStudent = new StudentInfo(444444, "Jeffrey-Kai", "Li");
+		theS.push(someStudent);
+		theS.displayStack();
+
+		someStudent = new StudentInfo(555555, "Abhinav", "Bala");
+		theS.push(someStudent);
+		theS.displayStack();
 		
 		
 		
